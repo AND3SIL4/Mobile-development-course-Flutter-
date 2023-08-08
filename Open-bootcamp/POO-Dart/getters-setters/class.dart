@@ -7,6 +7,7 @@ class Personas {
   String? name;
   int? fechaNacimiento;
   double? altura;
+  bool? isActive;
   //variables privadas
   int? _phoneNumber;
 
@@ -14,11 +15,11 @@ class Personas {
       {this.altura});
   //setter de numero telefonico
   set setPhoneNumber(int phoneNumber) {
-    _phoneNumber = phoneNumber; 
+    _phoneNumber = phoneNumber;
   }
 
   //getter de numero telefonico
-  get getPhoneNumber => _phoneNumber?? 'No tiene número';
+  get getPhoneNumber => _phoneNumber ?? 'No tiene número';
 
   int calcularEdad() {
     DateTime now = DateTime.now();
@@ -28,6 +29,21 @@ class Personas {
     } else {
       final edad = now.year - fechaNacimiento!;
       return edad;
+    }
+  }
+
+  //getter de estado activo
+  bool? get getIsActive => this.isActive;
+  //setters de estado activo
+  set setIsActive(bool? isActive) => this.isActive = isActive;
+
+  //metodo que retorna bool para saber si esta activo o no
+  bool isActiveM() {
+    if (calcularEdad() > 20) {
+      isActive = true;
+      return true;
+    } else {
+      return false;
     }
   }
 }
