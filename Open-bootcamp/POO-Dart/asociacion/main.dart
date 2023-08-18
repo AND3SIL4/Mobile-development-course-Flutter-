@@ -43,4 +43,6 @@ void main() {
   print(
       'El salario de ${pedro.nombre} en dolares es ${pedro.convertirADolares(pedro.salario).toStringAsFixed(2)}');
 
+
+  // final de POO con Dart
 }
