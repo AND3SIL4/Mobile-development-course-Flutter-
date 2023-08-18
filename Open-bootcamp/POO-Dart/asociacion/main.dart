@@ -2,6 +2,7 @@
  *Trabajando con asociacion en Dart
  */
 
+import '../extension/trbajador_extension.dart';
 import '../herencia/trabajador_class.dart';
 import '../herencia/usuarios_class.dart';
 import 'direccion_class.dart';
@@ -37,4 +38,9 @@ void main() {
   maria.profesion = 'Programadora';
   List competencias = ['Dart', 'Flutter'];
   print(maria.competencias(competencias));
+
+  //extensions
+  print(
+      'El salario de ${pedro.nombre} en dolares es ${pedro.convertirADolares(pedro.salario).toStringAsFixed(2)}');
+
 }
