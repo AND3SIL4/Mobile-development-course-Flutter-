@@ -12,4 +12,8 @@ class Persona {
   set nombre(value) => this._nombre = value;
 
   Persona(this._nombre, this.edad, this.telefono, this.direccion);
+
+  String hablar(String texto){
+    return ('$nombre dice $texto');
+  }
 }

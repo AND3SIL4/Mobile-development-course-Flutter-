@@ -19,5 +19,12 @@ void main() {
   Trabajador pedro = Trabajador('Pedro', 21, 321, direccionPedro, 12212);
   print('El nombre del trabajador es: ${pedro.nombre}');
   print('El salario del trabajador es: ${pedro.salario}');
-  print(pedro);
+
+  // Sobre carga de metodos
+  // llamado de metodos de persona
+  print(luis.hablar('Hola'));
+  print(pedro.hablarTrabajador('Hola'));
+
+  //interfaz
+  pedro.caminar();
 }
