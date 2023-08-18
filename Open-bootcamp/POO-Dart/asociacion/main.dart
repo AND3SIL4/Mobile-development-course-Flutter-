@@ -3,6 +3,7 @@
  */
 
 import '../herencia/trabajador_class.dart';
+import '../herencia/usuarios_class.dart';
 import 'direccion_class.dart';
 import 'personas_class.dart';
 
@@ -27,4 +28,13 @@ void main() {
 
   //interfaz
   pedro.caminar();
+
+  //mixing
+  Direccion direccionMaria = Direccion(12, 'Jimenez', 'Bogotá');
+  Usuario maria =
+      Usuario('Maria', 12, 2222, direccionMaria, 'Maria333', 'password');
+
+  maria.profesion = 'Programadora';
+  List competencias = ['Dart', 'Flutter'];
+  print(maria.competencias(competencias));
 }
