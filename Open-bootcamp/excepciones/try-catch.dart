@@ -3,6 +3,7 @@ void main() {
 
   //try and catch simple
   try {
+    // ignore: unused_local_variable
     String nombreMayus = nombre!.toUpperCase();
   } catch (e) {
     print('Error en el toUpperCase: $e');
@@ -13,6 +14,7 @@ void main() {
   int b = 0;
 
   try {
+    // ignore: unused_local_variable
     var res = a ~/ b;
   } on UnsupportedError {
     print("No se puede dividir por cero");
@@ -23,6 +25,7 @@ void main() {
   //try and catch con finally
 
   try {
+    // ignore: unused_local_variable
     var res = a ~/ b;
   } on UnsupportedError {
     print("No se puede dividir por cero con finally");
@@ -42,7 +45,6 @@ void main() {
   }
 
   try {
-    var res = division(a, b);
   } on UnsupportedError {
     print('Error en UnsupportedError');
   } on FormatException {
@@ -52,5 +54,5 @@ void main() {
   }
 
   //Excepciones personalizadas
-  
+
 }
