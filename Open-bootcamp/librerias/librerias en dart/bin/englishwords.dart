@@ -1,7 +1,5 @@
 import 'dart:io';
-
 import 'package:english_words/english_words.dart';
-
 import 'package:csv/csv.dart';
 
 void main() async {
