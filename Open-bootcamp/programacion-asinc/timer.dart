@@ -3,7 +3,6 @@
  */
 // importar libreria asincrona
 import 'dart:async';
-import 'dart:ffi';
 
 void main() {
   //instacia de objeto tipo Duration
