@@ -1,3 +1,5 @@
+///Componentes por defecto al crear la aplicacion de flutter
+
 import 'package:flutter/material.dart';
 
 void main() {
